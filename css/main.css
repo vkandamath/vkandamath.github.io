@@ -1,0 +1,14 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#profile-pic {
+	border-radius: 50%
+}
+
+.jumbotron {
+	text-align: center;
+	background-image: url("../assets/jumbotron-background.png");
+	background-size: cover;
+}
