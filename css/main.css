@@ -1,7 +1,31 @@
 html, body {
+	max-height: 100%;
     max-width: 100%;
     overflow-x: hidden;
 }
+
+.navbar-default {
+	border-radius: 0px;
+	background-color: transparent;
+	border-color: rgba(255,255,255,.3);
+	margin: 0px;
+	-webkit-transition: all 2s; /* Safari */
+	transition: all 0.5s;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white;
+
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+}
+
+.navbar-default .navbar-brand:hover {
+	color: white;
+}
+
 
 #profile-pic {
 	border-radius: 50%
@@ -11,4 +35,19 @@ html, body {
 	text-align: center;
 	background-image: url("../assets/jumbotron-background.png");
 	background-size: cover;
+	background-position: center;
+	height: 100vh;
+
+}
+
+#view-more > span {
+	color: white;
+}
+
+.table-responsive {
+	margin: 0 auto;
+}
+
+.caption {
+	text-align: center;
 }
