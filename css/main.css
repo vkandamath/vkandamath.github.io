@@ -174,7 +174,7 @@ body {
 
 .text {
   color: white;
-  font-size: 1.25vw;
+  font-size: 1em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -202,8 +202,6 @@ body {
 	margin-left: 0px;
 }
 
-.text hr {
-	padding: 0px;
-	margin-top: 0px;
-	margin-bottom: 3px;
+.what-i-do-col {
+	text-align: center;
 }
