@@ -186,6 +186,12 @@ body {
   -ms-transform: translate(-50%, -50%);
 }
 
+.what-i-do-col {
+	text-align: center;
+}
+
+
+
 .col-md-6.container-left {
 	padding-right: 0px;
 }
@@ -194,14 +200,27 @@ body {
 	padding-left: 0px;
 }
 
-.col-md-6 > .overlay-left {
+.col-md-6 > a > .overlay-left {
 	margin-right: 0px;
 }
 
-.col-md-6 > .overlay-right {
+.col-md-6 > a > .overlay-right {
 	margin-left: 0px;
 }
 
-.what-i-do-col {
+#view-github-button {
+	width: 100%;
+	background-color: #2D7DD2;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	text-align: center;
+	border: none;
+	color: white;
+	-webkit-transition: all 2s; /* Safari */
+	transition: all 0.5s;
 }
+
+#view-github-button:hover{
+	background-color: #2F2D2E;
+}
+
