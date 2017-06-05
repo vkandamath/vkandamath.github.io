@@ -15,7 +15,7 @@ function changeNavbar() {
 		$(".navbar-default").css("border-bottom-width", "2px");
 		$(".navbar-brand").css("color", "#2F2D2E");
 		$(".navbar-nav > li > a").css("color", "#2F2D2E");
-		$("#last-name").css("color", "#2D7DD2")
+		$("#last-name").css("color", "#2E9CCA")
 	}
 }
 
