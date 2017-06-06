@@ -17,9 +17,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link rel="stylesheet" href="css/hover.css">
         <link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/noframework.waypoints.js"></script>
         <script type="text/javascript" src="js/typed.js"></script>
-        <script type="text/javascript" src="js/scripts.js"></script>
         <script type="text/javascript" src="js/jquery.circliful.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
     </head>
     <body>
 
@@ -76,35 +77,38 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="section-subheading">- What I Do -</h1><hr>
-                        
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-3 what-i-do-col">
-                        <img src="http://via.placeholder.com/350x350" class="img-thumbnail" id="profile-pic">
-                        <div class="caption">
-                            <h3>Full-Stack</h3>
-                            <p class="description">I have hands-on experience with multiple layers on the stack, including UX, backend processing, and database querying. I prefer to work on the backend side of things, especially when it comes to web and mobile apps. Although my specialty lies in backend languages such as Python and Java, I enjoy wearing multiple hats and playing around with frontend technologies such as CSS and jQuery.
+                    <div class="animated" id="what-i-do-left-half">
+                        <div class="col-xs-12 col-sm-6 col-md-3 what-i-do-col">
+                            <img src="http://via.placeholder.com/350x350" class="img-thumbnail" id="profile-pic">
+                            <div class="caption">
+                                <h3>Full-Stack</h3>
+                                <p class="description">I have hands-on experience with multiple layers on the stack, including UX, backend processing, and database querying. I prefer to work on the backend side of things, especially when it comes to web and mobile apps. Although my specialty lies in backend languages such as Python and Java, I enjoy wearing multiple hats and playing around with frontend technologies such as CSS and jQuery.
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 what-i-do-col">
+                            <img src="http://via.placeholder.com/350x350" class="img-thumbnail" id="profile-pic">
+                            <div class="caption">
+                                <h3>Playing with Data</h3>
+                                <p class="description">I also enjoy working with projects that process and transform large sets of data. I have learned machine-learning techniques in my data science class and have worked with Bioinformatics projects. I also worked with database querying and data transformations at my previous Accenture internship.</p><br><br>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 what-i-do-col">
-                        <img src="http://via.placeholder.com/350x350" class="img-thumbnail" id="profile-pic">
-                        <div class="caption">
-                            <h3>Playing with Data</h3>
-                            <p class="description">I also enjoy working with projects that process and transform large sets of data. I have learned machine-learning techniques in my data science class and have worked with Bioinformatics projects. I also worked with database querying and data transformations at my previous Accenture internship.</p><br><br>
+                    <div class="animated" id="what-i-do-right-half">
+                        <div class="col-xs-12 col-sm-6 col-md-3 what-i-do-col">
+                            <img src="http://via.placeholder.com/350x350" class="img-thumbnail" id="profile-pic">
+                            <div class="caption">
+                                <h3>Side Projects</h3>
+                                <p class="description">There is a large discrepancy between university-level projects and industry-level production code. Therefore, I spend a lot of my free time learning new technologies such as Node.js, Socket.io, and Javascript. I increased my front-end knowhow while building this site, for example!</div>
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 what-i-do-col">
-                        <img src="http://via.placeholder.com/350x350" class="img-thumbnail" id="profile-pic">
-                        <div class="caption">
-                            <h3>Side Projects</h3>
-                            <p class="description">There is a large discrepancy between university-level projects and industry-level production code. Therefore, I spend a lot of my free time learning new technologies such as Node.js, Socket.io, and Javascript. I increased my front-end knowhow while building this site, for example!</div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 what-i-do-col">
-                        <img src="http://via.placeholder.com/350x350" class="img-thumbnail" id="profile-pic">
-                        <div class="caption">
-                            <h3>Entrepreneurship</h3>
-                            <p class="description">Writing good code is not enough to be a great software engineer. I minored in Entrepreneurship and Innovation to better communicate my ideas and the cool things I build! I also want to use my technical know-how to start something great on my own!</p>
+                        <div class="col-xs-12 col-sm-6 col-md-3 what-i-do-col">
+                            <img src="http://via.placeholder.com/350x350" class="img-thumbnail" id="profile-pic">
+                            <div class="caption">
+                                <h3>Entrepreneurship</h3>
+                                <p class="description">Writing good code is not enough to be a great software engineer. I minored in Entrepreneurship and Innovation to better communicate my ideas and the cool things I build! I also want to use my technical know-how to start something great on my own!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -120,7 +124,7 @@
                     </div>
                 </div>
                 
-                <div class="row">
+                <div class="row animated" id="gymder">
                     <div class="col-xs-12 col-sm-8 col-md-8">
                         <h2 style="font-family: proximaNovaBold">Gymder</h2>
                         <p>Not everyone always has a friend to go to the gym with, but many common workouts require a buddy to spot or help out. At the very least, working out with someone else is a lot more fun than doing it alone. It can also be intimidating to ask others at the gym to work out with them, even though most other people in the gym who are alone would rather have a buddy. We aim to create a Pebble app that removes all awkwardness from this scenario, and matches people at the gym so that everyone can be safer and have more fun at the gym. The app was written using Sails.js and the Pebble SDK.</p>
@@ -132,7 +136,7 @@
 
                 <hr>
 
-                <div class="row">
+                <div class="row animated" id="tempo-tunes">
                     <div class="col-xs-12 col-sm-4 col-md-4">
                         <img src="http://via.placeholder.com/350x350" class="img-thumbnail" id="profile-pic">
                     </div>
@@ -144,7 +148,7 @@
 
                 <hr>
 
-                <div class="row">
+                <div class="row animated" id="chatterbox">
                     <div class="col-xs-12 col-sm-8 col-md-8">
                         <h2 style="font-family: proximaNovaBold">Chatterbox</h2>
                         <p>An anonymous chat application I wrote to learn Node.js development using Express.js and Socket.io. Frontend was developed using Bootstrap, Animate.css, jscolor, and jQuery. After first developing a bare-bones chat app, I continued adding new features such as real-time 'user is typing' updates, image uploads, message color selection, and nickname selection.</p>
@@ -156,7 +160,7 @@
 
                 <hr>
 
-                <div class="row">
+                <div class="row animated" id="tickertrack">
                     <div class="col-xs-12 col-sm-4 col-md-4">
                         <img src="http://via.placeholder.com/350x350" class="img-thumbnail" id="profile-pic">
                     </div>
@@ -241,8 +245,8 @@
             <div class="container" id="contact">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="section-subheading">- Contact -</h1>
-                        <p style="text-align: center">Impressed? Drop me a line to get touch.</p>
+                        <h1 style="color: white" class="section-subheading">- Contact -</h1>
+                        <p style="text-align: center; color: white">Impressed? Drop me a line to get touch.</p>
                         <br>
                         <form action="https://formspree.io/vkandamath@gmail.com" method="POST">
                             <div class="form-group">
@@ -272,7 +276,7 @@
                         <a href="https://www.github.com/vkandamath" class="social-media-icon hvr-grow" ><img src="assets/github.svg" height="48px" width="48px"></a>
                         <a href="https://www.linkedin.com/in/vyshakhkandamath/" class="social-media-icon hvr-grow"><img src="assets/linkedin.svg" height="48px" width="48px"></a>
                         <hr>
-                        <span id="footer-text">This website was built by Vyshakh Kandamath using Bootstrap, hover.css, circliful.js, circle-progress.js, typed.js and <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>.</span>
+                        <span id="footer-text">This website was built by Vyshakh Kandamath with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>.</span>
                     </div>
                 </div>
             </div>

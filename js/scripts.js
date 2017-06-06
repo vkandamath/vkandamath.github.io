@@ -135,3 +135,74 @@ $(document).ready(function() {
         animateInView: true
     });
 });
+
+
+
+
+
+$(document).ready(function(){
+ 
+  // hide our element on page load
+  $('#what-i-do-left-half').css('opacity', 0);
+
+	var waypoint = new Waypoint({
+	  element: document.getElementById('what-i-do-left-half'),
+	  handler: function() {
+	  	$("#what-i-do-left-half").addClass("fadeInLeft")
+	  },
+	  offset: '100%'
+	});
+
+  // hide our element on page load
+  $('#what-i-do-right-half').css('opacity', 0);
+
+	var waypoint = new Waypoint({
+	  element: document.getElementById('what-i-do-right-half'),
+	  handler: function() {
+	  	$("#what-i-do-right-half").addClass("fadeInRight")
+	  },
+	  offset: '100%'
+	});
+
+	  // hide our element on page load
+  $('#gymder').css('opacity', 0);
+
+	var waypoint = new Waypoint({
+	  element: document.getElementById('gymder'),
+	  handler: function() {
+	  	$("#gymder").addClass("rotateInDownRight")
+	  },
+	  offset: '100%'
+	});
+
+	 $('#tempo-tunes').css('opacity', 0);
+
+	var waypoint = new Waypoint({
+	  element: document.getElementById('tempo-tunes'),
+	  handler: function() {
+	  	$("#tempo-tunes").addClass("rotateInDownLeft")
+	  },
+	  offset: '100%'
+	});
+
+	$('#chatterbox').css('opacity', 0);
+
+	var waypoint = new Waypoint({
+	  element: document.getElementById('chatterbox'),
+	  handler: function() {
+	  	$("#chatterbox").addClass("rotateInDownRight")
+	  },
+	  offset: '100%'
+	});
+
+	$('#tickertrack').css('opacity', 0);
+
+	var waypoint = new Waypoint({
+	  element: document.getElementById('tickertrack'),
+	  handler: function() {
+	  	$("#tickertrack").addClass("rotateInDownLeft")
+	  },
+	  offset: '100%'
+	});
+ 
+});

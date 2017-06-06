@@ -274,7 +274,7 @@ body {
 }
 
 #contact-wrapper {
-	background-color: #F6FAFC;
+	background-color: #2E9CCA;
 }
 
 textarea {
@@ -304,10 +304,20 @@ textarea {
 }
 
 #submit-btn {
-	background-color: #2E9CCA;
-	border-color: #2E9CCA;
+	background-color: #252525;
+	border: none;
+	color: white;
+	-webkit-transition: all 0.5s; /* Safari */
+	transition: all 0.5s;
+}
+
+#submit-btn:hover {
+	background-color: white;
+	border: none;
+	color: #252525;
+
 }
 
 .form-control {
-	border-color: #2E9CCA;
+	border: none;
 }
