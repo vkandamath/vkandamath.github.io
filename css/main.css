@@ -24,6 +24,31 @@ body {
 	font-family: proximaNovaLight;
 }
 
+@media screen and (max-width: 767px) {
+	.project-row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.project-image {
+		order: 1;
+	}
+
+	.project-caption {
+		order: 2;
+	}
+
+	.project-caption > h1 {
+		text-align: center;
+	}
+
+	.project-caption > p {
+		text-align: justify;
+	}
+
+
+}
+
 .jumbotron {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
@@ -69,7 +94,6 @@ body {
 #about-wrapper, #projects-wrapper {
 	background-color: #F6FAFC;
 	border-bottom: 1px solid #DCDCDC;
-	text-align: justify;
 }
 
 #profile-pic {
@@ -148,12 +172,6 @@ body {
 	color: white;
 }
 
-
-#tempo-tunes > div {
-	text-align: center;
-}
-
-
 .description {
 	text-align: justify;
 }
@@ -161,6 +179,7 @@ body {
 .wrapper {
 	padding-top: 5%;
 	padding-bottom: 5%;
+	text-align: center;
 }
 
 
@@ -321,3 +340,4 @@ textarea {
 .form-control {
 	border: none;
 }
+
