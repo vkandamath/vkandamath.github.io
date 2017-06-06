@@ -340,3 +340,7 @@ textarea {
 	border-radius: 0px;
 }
 
+hr {
+	border-style: dotted;
+}
+

@@ -130,25 +130,160 @@ function loadProgressCircles() {
 }
 
 
-
-
-
-
-
 $(document).ready(function(){
 
-	var progressCirclesLoaded = false;
+	var javaProgressLoaded = false;
 
 	var waypoint = new Waypoint({
-	  element: document.getElementById('skills-wrapper'),
+	  element: document.getElementById('java-level'),
 	  handler: function() {
-	  	if (progressCirclesLoaded == false) {
-	  		loadProgressCircles();
-	  		progressCirclesLoaded = true;
+	  	if (javaProgressLoaded == false) {
+	  		$("#java-level").circliful({
+		        animationStep: 4,
+		        foregroundBorderWidth: 15,
+		        backgroundBorderWidth: 15,
+		        backgroundColor: 'white',
+		        foregroundColor: "#ff0000",
+		        percent: 95,
+		        replacePercentageByText: "Java",
+		        fontColor: "white",
+		        percentageTextSize: 14,
+		        text: "Advanced",
+		        textStyle: "font-size: 10px"
+		    });
+	  		javaProgressLoaded = true;
 	  	}
 	  },
 	  offset: '100%'
 	});
+
+	var pythonProgressLoaded = false;
+
+	var waypoint = new Waypoint({
+	  element: document.getElementById('python-level'),
+	  handler: function() {
+	  	if (pythonProgressLoaded == false) {
+			$("#python-level").circliful({
+		        animationStep: 4,
+		        foregroundBorderWidth: 15,
+		        backgroundBorderWidth: 15,
+		        backgroundColor: 'white',
+		        foregroundColor: '#ff0000',
+		        percent: 85,
+		        replacePercentageByText: "Python",
+		        fontColor: "white",
+		        percentageTextSize: 14,
+		        text: "Advanced",
+		        textStyle: "font-size: 10px"
+		    });
+	  		pythonProgressLoaded = true;
+	  	}
+	  },
+	  offset: '100%'
+	});
+
+	var cProgressLoaded = false;
+
+	var waypoint = new Waypoint({
+	  element: document.getElementById('c-level'),
+	  handler: function() {
+	  	if (cProgressLoaded == false) {
+		    $("#c-level").circliful({
+		        animationStep: 4,
+		        foregroundBorderWidth: 15,
+		        backgroundBorderWidth: 15,
+		        backgroundColor: 'white',
+		        foregroundColor: "#33cc33",
+		        percent: 65,
+		        replacePercentageByText: "C",
+		        fontColor: "white",
+		        percentageTextSize: 14,
+		        text: "Intermediate",
+		        textStyle: "font-size: 10px"
+		    });
+		    cProgressLoaded = true;
+	  	}
+	  },
+	  offset: '100%'
+	});
+
+	var postgresqlProgressLoaded = false;
+
+	var waypoint = new Waypoint({
+	  element: document.getElementById('postgresql-level'),
+	  handler: function() {
+	  	if (postgresqlProgressLoaded == false) {
+		    $("#postgresql-level").circliful({
+		        animationStep: 4,
+		        foregroundBorderWidth: 15,
+		        backgroundBorderWidth: 15,
+		        backgroundColor: 'white',
+		        foregroundColor: "#33cc33",
+		        percent: 60,
+		        replacePercentageByText: "PostgreSQL",
+		        fontColor: "white",
+		        percentageTextSize: 14,
+		        text: "Intermediate",
+		        textStyle: "font-size: 10px"
+		    });
+		    postgresqlProgressLoaded = true;
+	  	}
+	  },
+	  offset: '100%'
+	});
+
+	var mvcProgressLoaded = false;
+
+	var waypoint = new Waypoint({
+	  element: document.getElementById('mvc-level'),
+	  handler: function() {
+	  	if (mvcProgressLoaded == false) {
+		    $("#mvc-level").circliful({
+		        animationStep: 4,
+		        foregroundBorderWidth: 15,
+		        backgroundBorderWidth: 15,
+		        backgroundColor: 'white',
+		        foregroundColor: "#33cc33",
+		        percent: 80,
+		        replacePercentageByText: "MVC",
+		        fontColor: "white",
+		        percentageTextSize: 14,
+		        text: "Intermediate",
+		        textStyle: "font-size: 10px"
+		    });
+		    mvcProgressLoaded = true;
+	  	}
+	  },
+	  offset: '100%'
+	});
+
+	var rProgressLoaded = false;
+
+	var waypoint = new Waypoint({
+	  element: document.getElementById('r-level'),
+	  handler: function() {
+	  	if (rProgressLoaded == false) {
+		    $("#r-level").circliful({
+		        animationStep: 4,
+		        foregroundBorderWidth: 15,
+		        backgroundBorderWidth: 15,
+		        backgroundColor: 'white',
+		        foregroundColor: "#33cc33",
+		        percent: 65,
+		        replacePercentageByText: "R",
+		        fontColor: "white",
+		        percentageTextSize: 14,
+		        text: "Intermediate",
+		        textStyle: "font-size: 10px"
+		    });
+		    rProgressLoaded = true;
+	  	}
+	  },
+	  offset: '100%'
+	});
+
+
+
 
 	$('#what-i-do-left-half').css('opacity', 0);
 	var waypoint = new Waypoint({
