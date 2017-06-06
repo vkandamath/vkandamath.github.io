@@ -45,13 +45,16 @@ body {
 	background-color: transparent;
 	border-color: rgba(255,255,255,.3);
 	margin: 0px;
-	-webkit-transition: all 2s; /* Safari */
+	-webkit-transition: all 0.5s; /* Safari */
 	transition: all 0.5s;
 }
 
 .navbar-default .navbar-nav>li>a {
 	color: white;
+}
 
+.navbar-default .navbar-nav>li>a:hover {
+	color: #2E9CCA;
 }
 
 .navbar-default .navbar-brand {
@@ -62,9 +65,11 @@ body {
 	color: white;
 }
 
+
 #about-wrapper, #projects-wrapper {
-	background-color: #EBEBEB;
+	background-color: #F6FAFC;
 	border-bottom: 1px solid #DCDCDC;
+	text-align: justify;
 }
 
 #profile-pic {
