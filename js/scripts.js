@@ -48,8 +48,7 @@ $(function(){
 });
 
 
-
-$(document).ready(function() {
+function loadProgressCircles() {
 	$("#java-level").circliful({
         animationStep: 4,
         foregroundBorderWidth: 15,
@@ -61,8 +60,7 @@ $(document).ready(function() {
         fontColor: "white",
         percentageTextSize: 14,
         text: "Advanced",
-        textStyle: "font-size: 10px",
-        animateInView: true
+        textStyle: "font-size: 10px"
     });
 	$("#python-level").circliful({
         animationStep: 4,
@@ -75,8 +73,7 @@ $(document).ready(function() {
         fontColor: "white",
         percentageTextSize: 14,
         text: "Advanced",
-        textStyle: "font-size: 10px",
-        animateInView: true
+        textStyle: "font-size: 10px"
     });
     $("#c-level").circliful({
         animationStep: 4,
@@ -89,8 +86,7 @@ $(document).ready(function() {
         fontColor: "white",
         percentageTextSize: 14,
         text: "Intermediate",
-        textStyle: "font-size: 10px",
-        animateInView: true
+        textStyle: "font-size: 10px"
     });
     $("#postgresql-level").circliful({
         animationStep: 4,
@@ -103,8 +99,7 @@ $(document).ready(function() {
         fontColor: "white",
         percentageTextSize: 14,
         text: "Intermediate",
-        textStyle: "font-size: 10px",
-        animateInView: true
+        textStyle: "font-size: 10px"
     });
     $("#mvc-level").circliful({
         animationStep: 4,
@@ -117,8 +112,7 @@ $(document).ready(function() {
         fontColor: "white",
         percentageTextSize: 14,
         text: "Intermediate",
-        textStyle: "font-size: 10px",
-        animateInView: true
+        textStyle: "font-size: 10px"
     });
     $("#r-level").circliful({
         animationStep: 4,
@@ -131,16 +125,25 @@ $(document).ready(function() {
         fontColor: "white",
         percentageTextSize: 14,
         text: "Intermediate",
-        textStyle: "font-size: 10px",
-        animateInView: true
+        textStyle: "font-size: 10px"
     });
-});
+}
+
+
 
 
 
 
 
 $(document).ready(function(){
+
+	var waypoint = new Waypoint({
+	  element: document.getElementById('skills-wrapper'),
+	  handler: function() {
+	  	loadProgressCircles()
+	  },
+	  offset: '100%'
+	});
 
 	$('#what-i-do-left-half').css('opacity', 0);
 	var waypoint = new Waypoint({
