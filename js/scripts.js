@@ -46,3 +46,86 @@ $(function(){
 			$("#collapsed-navbar").css("background-color", "inherit");
 		});
 });
+
+
+
+$(document).ready(function() {
+	$("#java-level").circliful({
+        animationStep: 4,
+        foregroundBorderWidth: 15,
+        backgroundBorderWidth: 15,
+        backgroundColor: 'white',
+        foregroundColor: "#ff0000",
+        percent: 95,
+        replacePercentageByText: "Java",
+        fontColor: "white",
+        percentageTextSize: 14,
+        text: "Advanced",
+        textStyle: "font-size: 10px"
+    });
+	$("#python-level").circliful({
+        animationStep: 4,
+        foregroundBorderWidth: 15,
+        backgroundBorderWidth: 15,
+        backgroundColor: 'white',
+        foregroundColor: '#ff0000',
+        percent: 85,
+        replacePercentageByText: "Python",
+        fontColor: "white",
+        percentageTextSize: 14,
+        text: "Advanced",
+        textStyle: "font-size: 10px"
+    });
+    $("#c-level").circliful({
+        animationStep: 4,
+        foregroundBorderWidth: 15,
+        backgroundBorderWidth: 15,
+        backgroundColor: 'white',
+        foregroundColor: "#33cc33",
+        percent: 65,
+        replacePercentageByText: "C",
+        fontColor: "white",
+        percentageTextSize: 14,
+        text: "Intermediate",
+        textStyle: "font-size: 10px"
+    });
+    $("#postgresql-level").circliful({
+        animationStep: 4,
+        foregroundBorderWidth: 15,
+        backgroundBorderWidth: 15,
+        backgroundColor: 'white',
+        foregroundColor: "#33cc33",
+        percent: 60,
+        replacePercentageByText: "PostgreSQL",
+        fontColor: "white",
+        percentageTextSize: 14,
+        text: "Intermediate",
+        textStyle: "font-size: 10px"
+    });
+    $("#mvc-level").circliful({
+        animationStep: 4,
+        foregroundBorderWidth: 15,
+        backgroundBorderWidth: 15,
+        backgroundColor: 'white',
+        foregroundColor: "#33cc33",
+        percent: 80,
+        replacePercentageByText: "MVC",
+        fontColor: "white",
+        percentageTextSize: 14,
+        text: "Intermediate",
+        textStyle: "font-size: 10px"
+    });
+    $("#r-level").circliful({
+        animationStep: 4,
+        foregroundBorderWidth: 15,
+        backgroundBorderWidth: 15,
+        backgroundColor: 'white',
+        foregroundColor: "#33cc33",
+        percent: 65,
+        replacePercentageByText: "R",
+        fontColor: "white",
+        percentageTextSize: 14,
+        text: "Intermediate",
+        textStyle: "font-size: 10px"
+    });
+});

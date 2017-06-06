@@ -243,7 +243,7 @@ body {
 }
 
 #view-github-button:hover{
-	background-color: #2F2D2E;
+	background-color: #252525;
 }
 
 .section-subheading {
@@ -251,5 +251,24 @@ body {
 	text-align: center;
 }
 
+#experience-wrapper {
 
+}
 
+#skills-wrapper {
+	background-color: #252525;
+}
+
+#skills-subheading {
+	color: white;
+}
+
+.skill-box {
+	border: 1px solid #DCDCDC;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block;
+	color: #DCDCDC;
+	margin-bottom: 5px;
+}
