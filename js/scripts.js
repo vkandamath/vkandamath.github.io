@@ -137,10 +137,15 @@ function loadProgressCircles() {
 
 $(document).ready(function(){
 
+	var progressCirclesLoaded = false;
+
 	var waypoint = new Waypoint({
 	  element: document.getElementById('skills-wrapper'),
 	  handler: function() {
-	  	loadProgressCircles()
+	  	if (progressCirclesLoaded == false) {
+	  		loadProgressCircles();
+	  		progressCirclesLoaded = true;
+	  	}
 	  },
 	  offset: '100%'
 	});
