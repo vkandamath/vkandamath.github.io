@@ -142,20 +142,21 @@ $(document).ready(function() {
 
 $(document).ready(function(){
 
-
+	$('#what-i-do-left-half').css('opacity', 0);
 	var waypoint = new Waypoint({
 	  element: document.getElementById('what-i-do-left-half'),
 	  handler: function() {
-	  	$("#what-i-do-left-half").addClass("bounceInLeft")
+	  	$("#what-i-do-left-half").addClass("fadeInLeft")
 	  },
 	  offset: '100%'
 	});
 
+	$('#what-i-do-right-half').css('opacity', 0);
 
 	var waypoint = new Waypoint({
 	  element: document.getElementById('what-i-do-right-half'),
 	  handler: function() {
-	  	$("#what-i-do-right-half").addClass("bounceInRight")
+	  	$("#what-i-do-right-half").addClass("fadeInRight")
 	  },
 	  offset: '100%'
 	});
