@@ -31,7 +31,7 @@ function changeNavbar() {
 
 $(function(){
 		$("#blurb-dynamic").typed({
-			strings: ["build things.", "craft experiences."],
+			strings: ["craft experiences.", "create new platforms", "tackle big problems.", "evolve software."],
 			typeSpeed: 0
 		});
 

@@ -270,9 +270,6 @@ body {
 	text-align: center;
 }
 
-#experience-wrapper {
-
-}
 
 #skills-wrapper, #footer-wrapper {
 	background-color: #252525;
@@ -283,12 +280,12 @@ body {
 }
 
 .skill-box {
-	border: 1px solid #DCDCDC;
+	border: 1px solid #2E9CCA;
 	padding: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
 	display: inline-block;
-	color: #DCDCDC;
+	color: #2E9CCA;
 	margin-bottom: 5px;
 }
 
