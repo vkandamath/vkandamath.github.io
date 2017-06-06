@@ -61,7 +61,8 @@ $(document).ready(function() {
         fontColor: "white",
         percentageTextSize: 14,
         text: "Advanced",
-        textStyle: "font-size: 10px"
+        textStyle: "font-size: 10px",
+        animateInView: true
     });
 	$("#python-level").circliful({
         animationStep: 4,
@@ -74,7 +75,8 @@ $(document).ready(function() {
         fontColor: "white",
         percentageTextSize: 14,
         text: "Advanced",
-        textStyle: "font-size: 10px"
+        textStyle: "font-size: 10px",
+        animateInView: true
     });
     $("#c-level").circliful({
         animationStep: 4,
@@ -87,7 +89,8 @@ $(document).ready(function() {
         fontColor: "white",
         percentageTextSize: 14,
         text: "Intermediate",
-        textStyle: "font-size: 10px"
+        textStyle: "font-size: 10px",
+        animateInView: true
     });
     $("#postgresql-level").circliful({
         animationStep: 4,
@@ -100,7 +103,8 @@ $(document).ready(function() {
         fontColor: "white",
         percentageTextSize: 14,
         text: "Intermediate",
-        textStyle: "font-size: 10px"
+        textStyle: "font-size: 10px",
+        animateInView: true
     });
     $("#mvc-level").circliful({
         animationStep: 4,
@@ -113,7 +117,8 @@ $(document).ready(function() {
         fontColor: "white",
         percentageTextSize: 14,
         text: "Intermediate",
-        textStyle: "font-size: 10px"
+        textStyle: "font-size: 10px",
+        animateInView: true
     });
     $("#r-level").circliful({
         animationStep: 4,
@@ -126,6 +131,7 @@ $(document).ready(function() {
         fontColor: "white",
         percentageTextSize: 14,
         text: "Intermediate",
-        textStyle: "font-size: 10px"
+        textStyle: "font-size: 10px",
+        animateInView: true
     });
 });
