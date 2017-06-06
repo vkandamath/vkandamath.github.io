@@ -344,3 +344,24 @@ hr {
 	border-style: dotted;
 }
 
+.navbar-toggle {
+	-webkit-transition: all 0.5s; /* Safari */
+	transition: all 0.5s;
+}
+
+.navbar-toggle:hover {
+	background-color: white;
+	border-color: white;
+	-webkit-transition: all 0.5s; /* Safari */
+	transition: all 0.5s;
+}
+
+.icon-bar {
+	background-color: white;
+	-webkit-transition: all 0.5s; /* Safari */
+	transition: all 0.5s;
+}
+
+.icon-bar:hover {
+	background-color: #2E9CCA;
+}

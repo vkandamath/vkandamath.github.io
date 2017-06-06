@@ -26,6 +26,17 @@ function changeNavbar() {
 		    $(this).css("color", "#252525");
 		});
 		$("#last-name").css("color", "#2E9CCA")
+
+		$(".navbar-toggle").hover(function(){
+				$(this).css("background-color", "white");
+				$(this).css("border-color", "#2E9CCA");
+		    	$(".icon-bar").css("background-color", "#2E9CCA");	
+			},
+			function(){
+				$(this).css("background-color", "#2E9CCA");
+		    	$(this).css("border-color", "#2E9CCA");
+		    	$(".icon-bar").css("background-color", "white");
+		});
 	}
 }
 
@@ -352,5 +363,34 @@ $(document).ready(function(){
 	  },
 	  offset: '100%'
 	});
+
+	$(".navbar-toggle").hover(function(){
+
+			if ($(".navbar-fixed-top").css("background-color") == "rgb(255, 255, 255)") {
+				$(this).css("background-color", "white");
+				$(this).css("border-color", "#2E9CCA");
+	    		$(".icon-bar").css("background-color", "#2E9CCA");				
+			}
+			else {
+				$(this).css("border-color", "white");
+				$(this).css("background-color", "white");
+	    		$(".icon-bar").css("background-color", "#2E9CCA");
+			}
+	    }, 
+	    function(){
+	    	if ($(".navbar-fixed-top").css("background-color") == "rgb(255, 255, 255)") {
+		    	$(this).css("background-color", "white");
+		    	$(this).css("border-color", "#2E9CCA");
+		    	$(".icon-bar").css("background-color", "white");
+		    }
+		    else {
+		    	$(this).css("background-color", "#2E9CCA");
+		    	$(this).css("border-color", "#2E9CCA");
+		    	$(".icon-bar").css("background-color", "white");
+		    }
+	    }
+	);
  
 });
+
+
