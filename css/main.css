@@ -322,6 +322,7 @@ textarea {
 #submit-btn {
 	background-color: #252525;
 	border: none;
+	border-radius: 0px;
 	color: white;
 	-webkit-transition: all 0.5s; /* Safari */
 	transition: all 0.5s;
@@ -336,5 +337,6 @@ textarea {
 
 .form-control {
 	border: none;
+	border-radius: 0px;
 }
 
