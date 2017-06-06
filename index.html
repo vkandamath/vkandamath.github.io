@@ -237,7 +237,7 @@
             </div>
         </div>
 
-        <div id="contact-wrapper">
+        <div id="contact-wrapper" class="wrapper">
             <div class="container" id="contact">
                 <div class="row">
                     <div class="col-md-12">
@@ -246,19 +246,33 @@
                         <br>
                         <form action="https://formspree.io/vkandamath@gmail.com" method="POST">
                             <div class="form-group">
-                                <label for="input-name">Name:</label>
                                 <input type="name" class="form-control" id="input-name" aria-describedby="emailHelp" placeholder="Name" name="name">
                             </div>
                             <div class="form-group">
-                                <label for="input-email">Email:</label>
                                 <input type="email" class="form-control" id="input-email" placeholder="Email" name="_replyto">
                             </div>
                             <div class="form-group">
-                                <label for="comment">Message:</label>
-                                <textarea class="form-control" rows="5" id="comment" name="message"></textarea>
-                            </div>s
-                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                                <input class="form-control" rows="5" id="comment" placeholder="Subject" name="subject"></input>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" id="comment" placeholder="Message" name="message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Submit</button>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-wrapper" class="wrapper">
+            <div class="container" id="footer">
+                <div class="row" style="text-align: center">
+                    <div class="col-md-12">
+                        <a href="mailto:vkandamath@gmail.com" class="social-media-icon hvr-grow"><img src="assets/email.svg" height="48px" width="48px"></a>
+                        <a href="https://www.github.com/vkandamath" class="social-media-icon hvr-grow" ><img src="assets/github.svg" height="48px" width="48px"></a>
+                        <a href="https://www.linkedin.com/in/vyshakhkandamath/" class="social-media-icon hvr-grow"><img src="assets/linkedin.svg" height="48px" width="48px"></a>
+                        <hr>
+                        <span id="footer-text">This website was built by Vyshakh Kandamath using Bootstrap, hover.css, circliful.js, circle-progress.js, typed.js and <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>.</span>
                     </div>
                 </div>
             </div>
