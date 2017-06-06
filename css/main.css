@@ -45,9 +45,8 @@ body {
 	.project-caption > p {
 		text-align: justify;
 	}
-
-
 }
+
 
 .jumbotron {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */

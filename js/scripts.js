@@ -19,11 +19,23 @@ function changeNavbar() {
 		$(".navbar-default").css("border-color", "#DCDCDC");
 		$(".navbar-default").css("border-bottom-width", "2px");
 		$(".navbar-brand").css("color", "#252525");
-		$(".navbar-nav > li > a").css("color", "white");
+
+		if ($(window).width() <= 767) {
+			$(".navbar-nav > li > a").css("color", "white");
+		}
+		else{
+			$(".navbar-nav > li > a").css("color", "#252525");
+		}
+		
 		$(".navbar-nav > li > a").hover(function(){
 		    $(this).css("color", "#2E9CCA");
 		    }, function(){
-		    $(this).css("color", "white");
+		    	if ($(window).width() <= 767) {
+		    		$(this).css("color", "#white");
+		    	}
+		    	else {
+		    		$(this).css("color", "#252525");
+		    	}
 		});
 		$("#last-name").css("color", "#2E9CCA")
 	}
