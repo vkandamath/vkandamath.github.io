@@ -365,3 +365,7 @@ hr {
 .icon-bar:hover {
 	background-color: #2E9CCA;
 }
+
+#about-wrapper {
+	text-align: justify;
+}

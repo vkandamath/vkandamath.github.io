@@ -19,24 +19,13 @@ function changeNavbar() {
 		$(".navbar-default").css("border-color", "#DCDCDC");
 		$(".navbar-default").css("border-bottom-width", "2px");
 		$(".navbar-brand").css("color", "#252525");
-		$(".navbar-nav > li > a").css("color", "#252525");
+		$(".navbar-nav > li > a").css("color", "white");
 		$(".navbar-nav > li > a").hover(function(){
 		    $(this).css("color", "#2E9CCA");
 		    }, function(){
-		    $(this).css("color", "#252525");
+		    $(this).css("color", "white");
 		});
 		$("#last-name").css("color", "#2E9CCA")
-
-		$(".navbar-toggle").hover(function(){
-				$(this).css("background-color", "white");
-				$(this).css("border-color", "#2E9CCA");
-		    	$(".icon-bar").css("background-color", "#2E9CCA");	
-			},
-			function(){
-				$(this).css("background-color", "#2E9CCA");
-		    	$(this).css("border-color", "#2E9CCA");
-		    	$(".icon-bar").css("background-color", "white");
-		});
 	}
 }
 
@@ -379,7 +368,7 @@ $(document).ready(function(){
 	    }, 
 	    function(){
 	    	if ($(".navbar-fixed-top").css("background-color") == "rgb(255, 255, 255)") {
-		    	$(this).css("background-color", "white");
+		    	$(this).css("background-color", "#2E9CCA");
 		    	$(this).css("border-color", "#2E9CCA");
 		    	$(".icon-bar").css("background-color", "white");
 		    }
