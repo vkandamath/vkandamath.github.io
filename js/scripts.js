@@ -141,25 +141,21 @@ $(document).ready(function() {
 
 
 $(document).ready(function(){
- 
-  // hide our element on page load
-  $('#what-i-do-left-half').css('opacity', 0);
+
 
 	var waypoint = new Waypoint({
 	  element: document.getElementById('what-i-do-left-half'),
 	  handler: function() {
-	  	$("#what-i-do-left-half").addClass("fadeInLeft")
+	  	$("#what-i-do-left-half").addClass("bounceInLeft")
 	  },
 	  offset: '100%'
 	});
 
-  // hide our element on page load
-  $('#what-i-do-right-half').css('opacity', 0);
 
 	var waypoint = new Waypoint({
 	  element: document.getElementById('what-i-do-right-half'),
 	  handler: function() {
-	  	$("#what-i-do-right-half").addClass("fadeInRight")
+	  	$("#what-i-do-right-half").addClass("bounceInRight")
 	  },
 	  offset: '100%'
 	});
@@ -170,7 +166,7 @@ $(document).ready(function(){
 	var waypoint = new Waypoint({
 	  element: document.getElementById('gymder'),
 	  handler: function() {
-	  	$("#gymder").addClass("rotateInDownRight")
+	  	$("#gymder").addClass("fadeInLeft")
 	  },
 	  offset: '100%'
 	});
@@ -180,7 +176,7 @@ $(document).ready(function(){
 	var waypoint = new Waypoint({
 	  element: document.getElementById('tempo-tunes'),
 	  handler: function() {
-	  	$("#tempo-tunes").addClass("rotateInDownLeft")
+	  	$("#tempo-tunes").addClass("fadeInRight")
 	  },
 	  offset: '100%'
 	});
@@ -190,7 +186,7 @@ $(document).ready(function(){
 	var waypoint = new Waypoint({
 	  element: document.getElementById('chatterbox'),
 	  handler: function() {
-	  	$("#chatterbox").addClass("rotateInDownRight")
+	  	$("#chatterbox").addClass("fadeInLeft")
 	  },
 	  offset: '100%'
 	});
@@ -200,7 +196,15 @@ $(document).ready(function(){
 	var waypoint = new Waypoint({
 	  element: document.getElementById('tickertrack'),
 	  handler: function() {
-	  	$("#tickertrack").addClass("rotateInDownLeft")
+	  	$("#tickertrack").addClass("fadeInRight")
+	  },
+	  offset: '100%'
+	});
+
+	var waypoint = new Waypoint({
+	  element: document.getElementById('view-github-button'),
+	  handler: function() {
+	  	$("#view-github-button").addClass("fadeIn")
 	  },
 	  offset: '100%'
 	});
