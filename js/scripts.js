@@ -284,6 +284,31 @@ $(document).ready(function(){
 	  offset: '100%'
 	});
 
+	var waypoint = new Waypoint({
+	  element: document.getElementById('md-research-center'),
+	  handler: function() {
+	  	$("#md-research-center").addClass("fadeInRight")
+	  },
+	  offset: '100%'
+	});
+
+	var waypoint = new Waypoint({
+	  element: document.getElementById('afs1'),
+	  handler: function() {
+	  	$("#afs1").addClass("fadeInLeft")
+	  },
+	  offset: '100%'
+	});
+
+	var waypoint = new Waypoint({
+	  element: document.getElementById('afs2'),
+	  handler: function() {
+	  	$("#afs2").addClass("fadeInRight")
+	  },
+	  offset: '100%'
+	});
+
+
 	$(".navbar-toggle").hover(function(){
 
 			if ($(".navbar-fixed-top").css("background-color") == "rgb(255, 255, 255)") {
@@ -310,7 +335,16 @@ $(document).ready(function(){
 		    }
 	    }
 	);
+
+	$(document).on('click', '.navbar-nav li a', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
  
 });
+
 
 

@@ -21,6 +21,7 @@
         <script type="text/javascript" src="js/typed.js"></script>
         <script type="text/javascript" src="js/jquery.circliful.min.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     </head>
     <body>
 
@@ -36,12 +37,12 @@
                 </div>
                 <div class="collapse navbar-collapse pull-right" id="collapsed-navbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">What I Do</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Experience</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about-wrapper">About Me</a></li>
+                        <li><a href="#what-i-do-wrapper">What I Do</a></li>
+                        <li><a href="#projects-wrapper">Projects</a></li>
+                        <li><a href="#experience-wrapper">Experience</a></li>
+                        <li><a href="#skills-wrapper">Skills</a></li>
+                        <li><a href="#contact-wrapper">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -130,7 +131,7 @@
                         <p>Not everyone always has a friend to go to the gym with, but many common workouts require a buddy to spot or help out. At the very least, working out with someone else is a lot more fun than doing it alone. It can also be intimidating to ask others at the gym to work out with them, even though most other people in the gym who are alone would rather have a buddy. We aim to create a Pebble app that removes all awkwardness from this scenario, and matches people at the gym so that everyone can be safer and have more fun at the gym. The app was written using Sails.js and the Pebble SDK.</p>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4">
-                        <img src="assets/glyphicons-357-dumbbell.png" class="img-thumbnail project-image" id="profile-pic" height="250" width="250">
+                        <img src="http://via.placeholder.com/350x350" class="img-thumbnail project-image" id="profile-pic">
                         <span class="glyphicons glyphicons-dumbbell"></span>
                     </div>
                 </div>
@@ -174,7 +175,7 @@
             </div>
         </div>
 
-        <button type="button" class="hvr-grow animated" id="view-github-button" onclick="window.location.href = 'https://www.github.com/vkandamath'">
+        <button type="button" class="hvr-shutter-out-horizontal animated" id="view-github-button" onclick="window.location.href = 'https://www.github.com/vkandamath'">
             <img src="assets/github1.svg" height="64px" width="64px">&nbsp&nbspView all projects here!
         </button>
 
@@ -183,7 +184,56 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="section-subheading">- Experience -</h1>
-                        <hr>
+                        <hr style="border-style: dotted; border-color: rgb(102, 102, 102);">
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="timeline">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <ul id="timeline-elements">
+                            <li>
+                                <div class="animated" id="md-research-center">
+                                    <h3>Maryland Research Center</h3>
+                                    <time>June 2014 - August 2014</time><br>
+                                    <span>Undergraduate Research Assistant</span><br>--
+                                    <ul style="text-align: justify; padding-left: 15px">
+                                        <li>Studied survival analysis in order to analyze data concerning hazard rates and the chance that a vulnerability in a host will be patched</li>
+                                        <li>Explored and analyzed statistical trend tests to determine reliability in patches for vulnerabilities on systems</li>
+                                    <ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="animated" id="afs1">
+                                    <h3>Accenture Federal Services</h3>
+                                    <time>May 2015 - July 2015</time><br>
+                                    <span>Software Developer, Intern</span><br>--
+                                    <ul style="text-align: justify; padding-left: 15px">
+                                        <li>Built live surveying app collaboratively to enable team leads to assess how well their team members follow Agile</li>
+                                        <li>Designed and implemented random-code generator to allow employees to easily access correct surveys in real-time, especially if multiple project teams ran surveys simultaneously</li>
+                                        <li>Structured backend hierarchy to enable executives to access aggregated survey results by division, team, sub team, etc</li>
+                                        <li>Developed analytics dashboards to compare results between teams and influence best engineering practices at AFS</li>
+                                    <ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="animated" id="afs2">
+                                    <h3>Accenture Federal Services</h3>
+                                    <time>June 2016 - August 2016</time><br>
+                                    <span>Software Engineer, Intern</span><br>--
+                                    <ul style="text-align: justify; padding-left: 15px">
+                                        <li>Self-taught and developed PL/SQL code rapidly and collaboratively to actively contribute to a large-scale USPS project</li>
+                                        <li>Optimized SQL queries and amended existing production code to adhere and adapt to changing database models</li>
+                                        <li>Developed innovative solutions to fix software defects and implement new design amendments</li>
+                                        <li>Identified inefficiencies in existing Java program and problem-solved to reduce runtime from O(n2) to O(n) by implementing HashMap structure for faster lookups</li>
+                                    <ul>
+                                </div>
+                            </li>
+                            <li id="down-arrow">
+                               
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
@@ -191,11 +241,13 @@
 
 
 
+
+
         <div id="skills-wrapper" class="wrapper">
             <div class="container" id="skills">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="section-subheading" id="skills-subheading">- Skills -</h1><hr style="border-style: dotted">
+                        <h1 class="section-subheading" id="skills-subheading">- Skills -</h1><hr style="border-style: dotted; border-color: rgb(102, 102, 102); margin-bottom: 0px;">
                     </div>
                 </div>
                 <div class="row">
@@ -243,8 +295,8 @@
             </div>
         </div>
 
-        <button type="button" class="hvr-grow animated" id="view-resume-button" onclick="window.location.href = 'https://www.github.com/vkandamath/Kandamath_Vyshakh_Resume.pdf'">
-            <span style="font-size: 20px">&nbsp&nbspView my resume here!</span>
+        <button type="button" class="hvr-grow animated" id="view-resume-button" onclick="window.location.href = 'https://vkandamath.github.io/Kandamath_Vyshakh_Resume.pdf'">
+            <span style="font-size: 20px; font-family: proximaNovaBold">&nbsp&nbspView my resume here!</span>
         </button>
 
         <div id="contact-wrapper" class="wrapper">
@@ -282,7 +334,7 @@
                         <a href="mailto:vkandamath@gmail.com" class="social-media-icon hvr-grow"><img src="assets/email.svg" height="48px" width="48px"></a>
                         <a href="https://www.github.com/vkandamath" class="social-media-icon hvr-grow" ><img src="assets/github.svg" height="48px" width="48px"></a>
                         <a href="https://www.linkedin.com/in/vyshakhkandamath/" class="social-media-icon hvr-grow"><img src="assets/linkedin.svg" height="48px" width="48px"></a>
-                        <hr style="border-style: dotted">
+                        <hr style="border-style: dotted; border-color: rgb(102, 102, 102);">
                         <span id="footer-text">This website was built by Vyshakh Kandamath with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>.</span>
                     </div>
                 </div>
