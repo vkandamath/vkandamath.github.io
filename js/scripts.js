@@ -57,6 +57,11 @@ $(function(){
 			$("#collapsed-navbar").addClass("pull-right");
 			$("#collapsed-navbar").css("background-color", "inherit");
 		});
+
+		$(window).resize(function() {
+			$(".navbar-collapse").collapse('hide');
+		});
+
 });
 
 
@@ -343,7 +348,15 @@ $(document).ready(function(){
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
- 
+
+    $(document).on('click', '.navbar-brand', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: "0px"
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
 });
 
 
