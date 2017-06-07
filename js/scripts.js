@@ -60,87 +60,6 @@ $(function(){
 });
 
 
-function loadProgressCircles() {
-	$("#java-level").circliful({
-        animationStep: 4,
-        foregroundBorderWidth: 15,
-        backgroundBorderWidth: 15,
-        backgroundColor: 'white',
-        foregroundColor: "#ff0000",
-        percent: 95,
-        replacePercentageByText: "Java",
-        fontColor: "white",
-        percentageTextSize: 14,
-        text: "Advanced",
-        textStyle: "font-size: 10px"
-    });
-	$("#python-level").circliful({
-        animationStep: 4,
-        foregroundBorderWidth: 15,
-        backgroundBorderWidth: 15,
-        backgroundColor: 'white',
-        foregroundColor: '#ff0000',
-        percent: 85,
-        replacePercentageByText: "Python",
-        fontColor: "white",
-        percentageTextSize: 14,
-        text: "Advanced",
-        textStyle: "font-size: 10px"
-    });
-    $("#c-level").circliful({
-        animationStep: 4,
-        foregroundBorderWidth: 15,
-        backgroundBorderWidth: 15,
-        backgroundColor: 'white',
-        foregroundColor: "#33cc33",
-        percent: 65,
-        replacePercentageByText: "C",
-        fontColor: "white",
-        percentageTextSize: 14,
-        text: "Intermediate",
-        textStyle: "font-size: 10px"
-    });
-    $("#postgresql-level").circliful({
-        animationStep: 4,
-        foregroundBorderWidth: 15,
-        backgroundBorderWidth: 15,
-        backgroundColor: 'white',
-        foregroundColor: "#33cc33",
-        percent: 60,
-        replacePercentageByText: "PostgreSQL",
-        fontColor: "white",
-        percentageTextSize: 14,
-        text: "Intermediate",
-        textStyle: "font-size: 10px"
-    });
-    $("#mvc-level").circliful({
-        animationStep: 4,
-        foregroundBorderWidth: 15,
-        backgroundBorderWidth: 15,
-        backgroundColor: 'white',
-        foregroundColor: "#33cc33",
-        percent: 80,
-        replacePercentageByText: "MVC",
-        fontColor: "white",
-        percentageTextSize: 14,
-        text: "Intermediate",
-        textStyle: "font-size: 10px"
-    });
-    $("#r-level").circliful({
-        animationStep: 4,
-        foregroundBorderWidth: 15,
-        backgroundBorderWidth: 15,
-        backgroundColor: 'white',
-        foregroundColor: "#33cc33",
-        percent: 65,
-        replacePercentageByText: "R",
-        fontColor: "white",
-        percentageTextSize: 14,
-        text: "Intermediate",
-        textStyle: "font-size: 10px"
-    });
-}
-
 
 $(document).ready(function(){
 
@@ -155,7 +74,7 @@ $(document).ready(function(){
 		        foregroundBorderWidth: 15,
 		        backgroundBorderWidth: 15,
 		        backgroundColor: 'white',
-		        foregroundColor: "#ff0000",
+		        foregroundColor: "#2E9CCA",
 		        percent: 95,
 		        replacePercentageByText: "Java",
 		        fontColor: "white",
@@ -180,7 +99,7 @@ $(document).ready(function(){
 		        foregroundBorderWidth: 15,
 		        backgroundBorderWidth: 15,
 		        backgroundColor: 'white',
-		        foregroundColor: '#ff0000',
+		        foregroundColor: '#2E9CCA',
 		        percent: 85,
 		        replacePercentageByText: "Python",
 		        fontColor: "white",
@@ -205,7 +124,7 @@ $(document).ready(function(){
 		        foregroundBorderWidth: 15,
 		        backgroundBorderWidth: 15,
 		        backgroundColor: 'white',
-		        foregroundColor: "#33cc33",
+		        foregroundColor: "#227293",
 		        percent: 65,
 		        replacePercentageByText: "C",
 		        fontColor: "white",
@@ -230,7 +149,7 @@ $(document).ready(function(){
 		        foregroundBorderWidth: 15,
 		        backgroundBorderWidth: 15,
 		        backgroundColor: 'white',
-		        foregroundColor: "#33cc33",
+		        foregroundColor: "#227293",
 		        percent: 60,
 		        replacePercentageByText: "PostgreSQL",
 		        fontColor: "white",
@@ -255,7 +174,7 @@ $(document).ready(function(){
 		        foregroundBorderWidth: 15,
 		        backgroundBorderWidth: 15,
 		        backgroundColor: 'white',
-		        foregroundColor: "#33cc33",
+		        foregroundColor: "#227293",
 		        percent: 80,
 		        replacePercentageByText: "MVC",
 		        fontColor: "white",
@@ -280,7 +199,7 @@ $(document).ready(function(){
 		        foregroundBorderWidth: 15,
 		        backgroundBorderWidth: 15,
 		        backgroundColor: 'white',
-		        foregroundColor: "#33cc33",
+		        foregroundColor: "#227293",
 		        percent: 65,
 		        replacePercentageByText: "R",
 		        fontColor: "white",
