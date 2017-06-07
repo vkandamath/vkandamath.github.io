@@ -479,3 +479,8 @@ hr {
 		border-color: transparent white transparent transparent;
 	}
 }
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #2E9CCA!important;
+    background-color: transparent;
+}
