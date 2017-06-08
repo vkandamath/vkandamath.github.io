@@ -357,6 +357,14 @@ $(document).ready(function(){
         event.preventDefault();
     });
 
+	$(document).on('click', '#view-more-btn', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $("#about-wrapper").offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
 });
 
 
