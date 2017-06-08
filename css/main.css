@@ -502,4 +502,60 @@ a {
 
 a:hover {
 	color: #252525;
-};
+}
+
+@media screen and (min-width: 768px) {
+	#tempo-tunes img {
+		margin-top: 40%;
+	}
+
+	#gymder img {
+		margin-top: 50%;
+	}
+
+	#chatterbox img {
+		margin-top: 35%;
+	}
+
+	#tickertrack img {
+		margin-top: 10%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#tempo-tunes img {
+		margin-top: 20%;
+	}
+
+	#gymder img {
+		margin-top: 25%;
+	}
+
+	#chatterbox img {
+		margin-top: 15%;
+	}
+
+	#tickertrack img {
+		margin-top: 5%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#tempo-tunes img {
+		margin-top: 5%;
+	}
+
+	#gymder img {
+		margin-top: 20%;
+	}
+
+	#chatterbox img {
+		margin-top: 10%;
+	}
+
+	#tickertrack img {
+		margin-top: 0%;
+	}
+}
+
+
