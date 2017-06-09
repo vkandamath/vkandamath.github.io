@@ -481,7 +481,7 @@ hr {
    
 	#timeline-elements > li:nth-child(even) div::before {
 		left: -15px;
-		border-width: 8px 14 px 8px 0;
+		border-width: 8px 14px 8px 0;
 		border-color: transparent white transparent transparent;
 	}
 }
@@ -520,6 +520,11 @@ a:hover {
 	#tickertrack img {
 		margin-top: 10%;
 	}
+
+	#profile-pic {
+		margin-top: 60%;
+	}
+
 }
 
 @media screen and (min-width: 992px) {
@@ -538,6 +543,10 @@ a:hover {
 	#tickertrack img {
 		margin-top: 5%;
 	}
+
+	#profile-pic {
+		margin-top: 30%;
+	}
 }
 
 @media screen and (min-width: 1200px) {
@@ -555,6 +564,10 @@ a:hover {
 
 	#tickertrack img {
 		margin-top: 0%;
+	}
+
+	#profile-pic {
+		margin-top: 5%;
 	}
 }
 
