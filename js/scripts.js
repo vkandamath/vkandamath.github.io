@@ -114,7 +114,7 @@ $(document).ready(function(){
 	var waypoint = new Waypoint({
 	  element: document.getElementById('chatterbox'),
 	  handler: function() {
-	  	$("#chatterbox").addClass("fadeInLeft")
+	  	$("#chatterbox").addClass("fadeInRight")
 	  },
 	  offset: '100%'
 	});
@@ -124,7 +124,7 @@ $(document).ready(function(){
 	var waypoint = new Waypoint({
 	  element: document.getElementById('tickertrack'),
 	  handler: function() {
-	  	$("#tickertrack").addClass("fadeInRight")
+	  	$("#tickertrack").addClass("fadeInLeft")
 	  },
 	  offset: '100%'
 	});
