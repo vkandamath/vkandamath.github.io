@@ -6,6 +6,7 @@ function changeNavbar() {
 		$(".navbar-default").css("background-color", "transparent");
 		$(".navbar-default").css("border-color", "rgba(255,255,255,.3)");
 		$(".navbar-default").css("border-bottom-width", "1px");
+		$(".navbar-default").css("box-shadow", "none");
 		$(".navbar-brand").css("color", "white");
 		$(".navbar-nav > li > a").css("color", "white");
 		$(".navbar-nav > li > a").hover(function(){
