@@ -18,7 +18,7 @@ function changeNavbar() {
 	}
 	else {
 		$(".navbar-default").css("background-color", "white");
-		$(".navbar-default").css("box-shadow", "0px 1px 10px black");
+		$(".navbar-default").css("box-shadow", "0px 1px 10px #696969");
 		$(".navbar-brand").css("color", "#252525");
 
 		if ($(window).width() <= 767) {
