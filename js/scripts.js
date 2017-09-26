@@ -6,7 +6,6 @@ function changeNavbar() {
 		$(".navbar-default").css("background-color", "transparent");
 		$(".navbar-default").css("border-color", "rgba(255,255,255,.3)");
 		$(".navbar-default").css("border-bottom-width", "1px");
-		$(".navbar-default").css("box-shadow", "none");
 		$(".navbar-brand").css("color", "white");
 		$(".navbar-nav > li > a").css("color", "white");
 		$(".navbar-nav > li > a").hover(function(){
@@ -18,7 +17,12 @@ function changeNavbar() {
 	}
 	else {
 		$(".navbar-default").css("background-color", "white");
+<<<<<<< HEAD
 		$(".navbar-default").css("box-shadow", "0px 1px 10px #696969");
+=======
+		$(".navbar-default").css("border-color", "#DCDCDC");
+		$(".navbar-default").css("border-bottom-width", "2px");
+>>>>>>> parent of aab1a74... cleanup and navbar drop shadow
 		$(".navbar-brand").css("color", "#252525");
 
 		if ($(window).width() <= 767) {
