@@ -44,7 +44,7 @@ function changeNavbar() {
 
 $(function(){
 		$("#blurb-dynamic").typed({
-			strings: ["craft experiences.", "create new platforms.", "tackle big problems.", "evolve software."],
+			strings: ["craft experiences.", "create platforms.", "tackle big problems.", "evolve software."],
 			typeSpeed: 0
 		});
 
