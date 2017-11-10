@@ -18,7 +18,7 @@ function changeNavbar() {
 	}
 	else {
 		$(".navbar-default").css("background-color", "white");
-		$(".navbar-default").css("box-shadow", "0px 1px 10px #696969");
+		$(".navbar-default").css("box-shadow", "0px 1px 10px #999");
 		$(".navbar-brand").css("color", "#252525");
 
 		if ($(window).width() <= 767) {
@@ -42,33 +42,27 @@ function changeNavbar() {
 	}
 }
 
-$(function(){
-		$("#blurb-dynamic").typed({
-			strings: ["craft experiences.", "create new platforms.", "tackle big problems.", "evolve software."],
-			typeSpeed: 0
-		});
-
-		$("#collapsed-navbar").on("show.bs.collapse", function() {
-			$("#collapsed-navbar").removeClass("pull-right");
-			$("#collapsed-navbar").css("background-color", "#252525");
-			$("#collapsed-navbar").css("border-top", "none");
-		});
-
-		$("#collapsed-navbar").on("hidden.bs.collapse", function() {
-			$("#collapsed-navbar").addClass("pull-right");
-			$("#collapsed-navbar").css("background-color", "inherit");
-		});
-
-		$(window).resize(function() {
-			$(".navbar-collapse").collapse('hide');
-		});
-
-});
-
-
-
 $(document).ready(function(){
 
+	$("#blurb-dynamic").typed({
+		strings: ["craft experiences.", "create new platforms.", "tackle big problems.", "evolve software."],
+		typeSpeed: 0
+	});
+
+	$("#collapsed-navbar").on("show.bs.collapse", function() {
+		$("#collapsed-navbar").removeClass("pull-right");
+		$("#collapsed-navbar").css("background-color", "#252525");
+		$("#collapsed-navbar").css("border-top", "none");
+	});
+
+	$("#collapsed-navbar").on("hidden.bs.collapse", function() {
+		$("#collapsed-navbar").addClass("pull-right");
+		$("#collapsed-navbar").css("background-color", "inherit");
+	});
+
+	$(window).resize(function() {
+		$(".navbar-collapse").collapse('hide');
+	});
 
 	$('#what-i-do-left-half').css('opacity', 0);
 	var waypoint = new Waypoint({
@@ -89,8 +83,7 @@ $(document).ready(function(){
 	  offset: '100%'
 	});
 
-	  // hide our element on page load
-  $('#gymder').css('opacity', 0);
+	$('#gymder').css('opacity', 0);
 
 	var waypoint = new Waypoint({
 	  element: document.getElementById('gymder'),
@@ -100,7 +93,7 @@ $(document).ready(function(){
 	  offset: '100%'
 	});
 
-	 $('#tempo-tunes').css('opacity', 0);
+	$('#tempo-tunes').css('opacity', 0);
 
 	var waypoint = new Waypoint({
 	  element: document.getElementById('tempo-tunes'),
@@ -161,7 +154,6 @@ $(document).ready(function(){
 	  },
 	  offset: '100%'
 	});
-
 
 	$(".navbar-toggle").hover(function(){
 
