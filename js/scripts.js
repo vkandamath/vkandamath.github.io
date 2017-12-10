@@ -169,6 +169,14 @@ $(document).ready(function(){
 	  offset: '100%'
 	});
 
+	var waypoint = new Waypoint({
+	  element: document.getElementById('afs3'),
+	  handler: function() {
+	  	$("#afs3").addClass("fadeInLeft")
+	  },
+	  offset: '100%'
+	});
+
 	$(".navbar-toggle").hover(function(){
 
 			if ($(".navbar-fixed-top").css("background-color") == "rgb(255, 255, 255)") {
