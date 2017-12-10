@@ -64,33 +64,55 @@ $(document).ready(function(){
 		$(".navbar-collapse").collapse('hide');
 	});
 
-	$('#what-i-do-left-half').css('opacity', 0);
+	$('#full-stack').css('opacity', 0);
 	var waypoint = new Waypoint({
-	  element: document.getElementById('what-i-do-left-half'),
+	  element: document.getElementById('full-stack'),
 	  handler: function() {
-	  	$("#what-i-do-left-half").addClass("fadeInLeft")
+	  	$("#full-stack").addClass("fadeIn")
 	  },
-	  offset: '100%'
+	  offset: '90%'
 	});
 
-	$('#what-i-do-right-half').css('opacity', 0);
-
+	$('#data').css('opacity', 0);
 	var waypoint = new Waypoint({
-	  element: document.getElementById('what-i-do-right-half'),
+	  element: document.getElementById('data'),
 	  handler: function() {
-	  	$("#what-i-do-right-half").addClass("fadeInRight")
+	  	setTimeout(function() {
+	  		$("#data").addClass("fadeIn")
+	  	}, 100)
 	  },
-	  offset: '100%'
+	  offset: '90%'
+	});
+
+	$('#side-projects').css('opacity', 0);
+	var waypoint = new Waypoint({
+	  element: document.getElementById('side-projects'),
+	  handler: function() {
+	  	setTimeout(function() {
+	  		$("#side-projects").addClass("fadeIn")
+	  	}, 300)
+	  },
+	  offset: '90%'
+	});
+
+	$('#entrepreneurship').css('opacity', 0);
+	var waypoint = new Waypoint({
+	  element: document.getElementById('entrepreneurship'),
+	  handler: function() {
+	  	setTimeout(function() {
+	  		$("#entrepreneurship").addClass("fadeIn")
+	  	}, 500)
+	  },
+	  offset: '90%'
 	});
 
 	$('#gymder').css('opacity', 0);
-
 	var waypoint = new Waypoint({
 	  element: document.getElementById('gymder'),
 	  handler: function() {
-	  	$("#gymder").addClass("fadeInLeft")
+	  	$("#gymder").addClass("fadeIn")
 	  },
-	  offset: '100%'
+	  offset: '90%'
 	});
 
 	$('#tempo-tunes').css('opacity', 0);
@@ -98,9 +120,9 @@ $(document).ready(function(){
 	var waypoint = new Waypoint({
 	  element: document.getElementById('tempo-tunes'),
 	  handler: function() {
-	  	$("#tempo-tunes").addClass("fadeInRight")
+	  	$("#tempo-tunes").addClass("fadeIn")
 	  },
-	  offset: '100%'
+	  offset: '90%'
 	});
 
 	$('#chatterbox').css('opacity', 0);
@@ -108,9 +130,9 @@ $(document).ready(function(){
 	var waypoint = new Waypoint({
 	  element: document.getElementById('chatterbox'),
 	  handler: function() {
-	  	$("#chatterbox").addClass("fadeInRight")
+	  	$("#chatterbox").addClass("fadeIn")
 	  },
-	  offset: '100%'
+	  offset: '90%'
 	});
 
 	$('#tickertrack').css('opacity', 0);
@@ -118,17 +140,9 @@ $(document).ready(function(){
 	var waypoint = new Waypoint({
 	  element: document.getElementById('tickertrack'),
 	  handler: function() {
-	  	$("#tickertrack").addClass("fadeInLeft")
+	  	$("#tickertrack").addClass("fadeIn")
 	  },
-	  offset: '100%'
-	});
-
-	var waypoint = new Waypoint({
-	  element: document.getElementById('view-github-button'),
-	  handler: function() {
-	  	$("#view-github-button").addClass("fadeIn")
-	  },
-	  offset: '100%'
+	  offset: '90%'
 	});
 
 	var waypoint = new Waypoint({

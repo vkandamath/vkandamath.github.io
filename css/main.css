@@ -1,3 +1,5 @@
+/* Primary: #00bbff */
+
 html, body {
 	max-height: 100%;
     max-width: 100%;
@@ -5,23 +7,8 @@ html, body {
 
 }
 
-@font-face {
-    font-family: proximaNovaLight;
-    src: url(../proximanova-light-webfont.woff);
-}
-
-@font-face {
-	font-family: proximaNovaRegular;
-	src: url(../proximanova-regular-webfont.woff);
-}
-
-@font-face {
-	font-family: proximaNovaBold;
-	src: url(../proximanova-bold-webfont.woff);
-}
-
 body {
-	font-family: proximaNovaLight;
+	font-family: 'Open Sans'
 }
 
 @media screen and (max-width: 767px) {
@@ -57,12 +44,9 @@ body {
 }
 
 .jumbotron h1 {
-	color: #2E9CCA;
+	color: #00bbff;
 }
 
-.intro {
-	font-family: proximaNovaBold;
-}
 
 .navbar-default {
 	border-radius: 0px;
@@ -99,26 +83,53 @@ body {
 	border-radius: 50%
 }
 
-.jumbotron {
-	text-align: center;
-	background-image: url("../assets/jumbotron-background-black.png");
+#overlay {
+	z-index: 0;
+	height: 100vh;
+	width: 100%;
+	background-color: black;
+	opacity: 0.7;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+#background {
+	z-index: -1;
+	background-image: url("../assets/pen-idea-bulb-paper.jpg");
 	background-size: cover;
 	background-position: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.jumbotron {
+	position: relative;
+	z-index: 1;
+	text-align: center;
 	height: 100vh;
 	margin-bottom: 0px;
+	background-color: transparent;
 }
+
+
 
 
 .btn-default, .btn-default:focus {
 	background-color: transparent;
 	padding: 15px;
 	border-radius: 0px;
-	border-color: #2E9CCA;
+	border-color: #00bbff;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	padding-left: 30px;
 	padding-right: 30px;
-	color: #2E9CCA;
+	color: #00bbff;
 	-webkit-transition: all 2s; /* Safari */
 	transition: all 0.5s;
 }
@@ -128,8 +139,8 @@ body {
 }
 
 .btn-default:hover {
-	background-color: #2E9CCA;
-	border-color: #2E9CCA;
+	background-color: #00bbff;
+	border-color: #00bbff;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	padding-left: 30px;
@@ -178,7 +189,7 @@ body {
 }
 
 .description {
-	text-align: justify;
+	text-align: center;
 }
 
 .wrapper {
@@ -236,17 +247,16 @@ body {
 	margin-left: 0px;
 }
 
-#view-github-button {
+#view-github-button, 
+#view-github-button:focus,
+#view-github-button:active {
 	width: 100%;
-	background-color: #2E9CCA;
+	background-color: #00bbff;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	text-align: center;
 	border: none;
 	color: white;
-	-webkit-transition: all 2s; /* Safari */
-	transition: all 0.5s;
-	font-family: proximaNovaBold;
 	font-size: 20px;
 }
 
@@ -262,9 +272,6 @@ body {
 	transition: all 0.5s;
 }
 
-#view-github-button:hover{
-	background-color: #252525;
-}
 
 .section-subheading {
 	font-family: proximaNovaBold;
@@ -281,17 +288,17 @@ body {
 }
 
 .skill-box {
-	border: 1px solid #2E9CCA;
+	border: 1px solid #00bbff;
 	padding: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
 	display: inline-block;
-	color: #2E9CCA;
+	color: #00bbff;
 	margin-bottom: 5px;
 }
 
 #contact-wrapper {
-	background-color: #2E9CCA;
+	background-color: #00bbff;
 }
 
 textarea {
@@ -368,7 +375,7 @@ hr {
 }
 
 #about-wrapper {
-	text-align: justify;
+	text-align: left;
 }
 #experience-wrapper {
     background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../assets/mtn.jpg");
@@ -389,7 +396,7 @@ hr {
 	margin: 0 auto;
 	width: 6px;
 	padding-top: 50px;
-	background: #2E9CCA;
+	background: #00bbff;
 }
 
 
@@ -505,21 +512,6 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
-	#tempo-tunes img {
-		margin-top: 40%;
-	}
-
-	#gymder img {
-		margin-top: 50%;
-	}
-
-	#chatterbox img {
-		margin-top: 35%;
-	}
-
-	#tickertrack img {
-		margin-top: 10%;
-	}
 
 	#profile-pic {
 		margin-top: 60%;
@@ -528,21 +520,6 @@ a:hover {
 }
 
 @media screen and (min-width: 992px) {
-	#tempo-tunes img {
-		margin-top: 20%;
-	}
-
-	#gymder img {
-		margin-top: 25%;
-	}
-
-	#chatterbox img {
-		margin-top: 15%;
-	}
-
-	#tickertrack img {
-		margin-top: 5%;
-	}
 
 	#profile-pic {
 		margin-top: 30%;
@@ -550,21 +527,6 @@ a:hover {
 }
 
 @media screen and (min-width: 1200px) {
-	#tempo-tunes img {
-		margin-top: 5%;
-	}
-
-	#gymder img {
-		margin-top: 20%;
-	}
-
-	#chatterbox img {
-		margin-top: 10%;
-	}
-
-	#tickertrack img {
-		margin-top: 0%;
-	}
 
 	#profile-pic {
 		margin-top: 5%;
