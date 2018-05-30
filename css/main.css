@@ -32,6 +32,10 @@ body {
 	.project-caption > p {
 		text-align: center;
 	}
+
+	#chevron-container {
+		display: none
+	}
 }
 
 
