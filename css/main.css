@@ -126,6 +126,7 @@ body {
 	left: 50%;
 	right: 50%;
 	bottom: 10px;
+	background-color: transparent;
 }
 
 #view-more-btn,
