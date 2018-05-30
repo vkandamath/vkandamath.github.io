@@ -73,17 +73,6 @@ $(document).ready(function(){
 	  offset: '90%'
 	});
 
-	$('#data').css('opacity', 0);
-	var waypoint = new Waypoint({
-	  element: document.getElementById('data'),
-	  handler: function() {
-	  	setTimeout(function() {
-	  		$("#data").addClass("fadeIn")
-	  	}, 100)
-	  },
-	  offset: '90%'
-	});
-
 	$('#side-projects').css('opacity', 0);
 	var waypoint = new Waypoint({
 	  element: document.getElementById('side-projects'),
