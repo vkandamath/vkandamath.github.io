@@ -166,6 +166,14 @@ $(document).ready(function(){
 	  offset: '100%'
 	});
 
+	var waypoint = new Waypoint({
+	  element: document.getElementById('google'),
+	  handler: function() {
+	  	$("#google").addClass("fadeInRight")
+	  },
+	  offset: '100%'
+	});
+
 	$(".navbar-toggle").hover(function(){
 
 			if ($(".navbar-fixed-top").css("background-color") == "rgb(255, 255, 255)") {
